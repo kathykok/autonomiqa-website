@@ -21,12 +21,24 @@
             box-shadow: 0 2px 16px rgba(0,0,0,0.2);
         }
         .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+        }
+        .logo-text {
             font-size: 2.5rem;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: 2px;
             color: #00E6A2;
-            text-shadow: 0 2px 8px #00E6A2AA;
+            font-family: 'Montserrat', Arial, sans-serif;
+            /* No text-shadow for a cleaner look */
         }
+        .logo svg {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
         nav {
             margin-top: 18px;
         }
@@ -120,7 +132,16 @@
 </head>
 <body>
     <header>
-        <div class="logo">AutonomiQA</div>
+        <div class="logo">
+            <span style="display: flex; align-items: center;">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                    <circle cx="22" cy="22" r="20" stroke="#00E6A2" stroke-width="3" fill="#181A20"/>
+                    <path d="M22 10L28 22H16L22 10Z" fill="#00E6A2"/>
+                    <rect x="16" y="26" width="12" height="4" fill="#00B3FF"/>
+                </svg>
+            </span>
+            <span class="logo-text">AutonomiQA</span>
+        </div>
         <nav>
             <a href="#about">About</a>
             <a href="#features">Features</a>
