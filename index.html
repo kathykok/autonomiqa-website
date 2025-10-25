@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutonomiQA</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #181A20;
+            color: #F5F6FA;
+            min-height: 100vh;
+        }
+        header {
+            background: #23242A;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #00E6A2;
+            text-shadow: 0 2px 8px #00E6A2AA;
+        }
+        nav {
+            margin-top: 18px;
+        }
+        nav a {
+            color: #F5F6FA;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #00E6A2;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #00E6A2;
+        }
+        .hero-desc {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto 32px auto;
+            color: #B0B3B8;
+        }
+        .cta-btn {
+            background: linear-gradient(90deg, #00E6A2 0%, #00B3FF 100%);
+            color: #181A20;
+            border: none;
+            border-radius: 32px;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 24px #00E6A244;
+            transition: background 0.2s, color 0.2s;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(90deg, #00B3FF 0%, #00E6A2 100%);
+            color: #23242A;
+        }
+        section.features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            margin: 64px 0 32px 0;
+        }
+        .feature {
+            background: #23242A;
+            border-radius: 18px;
+            padding: 32px 28px;
+            width: 320px;
+            box-shadow: 0 2px 16px #00E6A222;
+            text-align: left;
+        }
+        .feature-title {
+            color: #00E6A2;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .feature-desc {
+            color: #B0B3B8;
+            font-size: 1rem;
+        }
+        footer {
+            background: #181A20;
+            color: #B0B3B8;
+            text-align: center;
+            padding: 32px 0 16px 0;
+            font-size: 1rem;
+            border-top: 1px solid #23242A;
+        }
+        @media (max-width: 900px) {
+            section.features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AutonomiQA</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-title">Empowering Autonomous Quality Assurance</div>
+            <div class="hero-desc">
+                AutonomiQA leverages cutting-edge AI and automation to revolutionize software quality assurance. We deliver intelligent, scalable, and adaptive solutions for modern technology companies.
+            </div>
+            <a href="#contact"><button class="cta-btn">Get in Touch</button></a>
+        </section>
+        <section class="features" id="features">
+            <div class="feature">
+                <div class="feature-title">AI-Driven Testing</div>
+                <div class="feature-desc">Harness the power of artificial intelligence to automate test creation, execution, and analysis for faster, smarter releases.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">Continuous Integration</div>
+                <div class="feature-desc">Seamlessly integrate with your CI/CD pipelines to ensure quality at every stage of development.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">Real-Time Analytics</div>
+                <div class="feature-desc">Gain actionable insights with real-time dashboards and reporting, enabling data-driven decision making.</div>
+            </div>
+        </section>
+        <section id="about" style="max-width: 800px; margin: 0 auto 64px auto; text-align: center;">
+            <h2 style="color:#00E6A2;">About AutonomiQA</h2>
+            <p style="color:#B0B3B8; font-size:1.1rem;">AutonomiQA is a technology company dedicated to transforming the landscape of software quality assurance. Our mission is to empower teams with intelligent automation, reduce manual effort, and accelerate innovation.</p>
+        </section>
+        <section id="contact" style="max-width: 800px; margin: 0 auto 64px auto; text-align: center;">
+            <h2 style="color:#00E6A2;">Contact Us</h2>
+            <p style="color:#B0B3B8; font-size:1.1rem;">Ready to elevate your QA process? Reach out to our team at <a href="mailto:info@autonomiqa.com" style="color:#00E6A2; text-decoration:underline;">info@autonomiqa.com</a></p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 AutonomiQA. All rights reserved.
+    </footer>
+</body>
+</html>
